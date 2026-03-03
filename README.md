@@ -59,6 +59,7 @@ export DAYDAYUP_VAULT_PATH="/path/to/your/obsidian/vault/daydayup"
 
 | 指令 | 功能 |
 |------|------|
+| `/daydayup` | 快速呼出 skill |
 | `帮我回忆` | 开始今日复习 |
 | `记住 <内容>` | 添加新记忆卡片 |
 | `记忆状态` | 查看学习统计 |

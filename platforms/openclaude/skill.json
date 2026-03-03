@@ -5,6 +5,7 @@
   "author": "huangjicong",
   "repository": "https://github.com/huangjicong/skill_daydayup",
   "triggers": [
+    "/daydayup",
     "帮我回忆",
     "复习",
     "添加记忆",

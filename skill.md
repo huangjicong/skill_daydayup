@@ -3,6 +3,7 @@ name: spaced-repetition
 description: 智能间隔重复记忆系统。基于艾宾浩斯遗忘曲线，支持动态调整复习间隔。当用户说"帮我回忆"、"复习"、"添加记忆"、"记住"时触发。
 version: 1.0.0
 triggers:
+  - "/daydayup"
   - "帮我回忆"
   - "复习"
   - "添加记忆"
@@ -46,6 +47,7 @@ export DAYDAYUP_VAULT_PATH="/path/to/your/obsidian/vault/daydayup"
 
 | 触发词 | 行为 |
 |--------|------|
+| `/daydayup` | 快速呼出 skill，显示帮助和使用选项 |
 | `帮我回忆` / `复习` / `今天学什么` | 展示今日待复习内容 |
 | `记住 <内容>` / `添加记忆 <内容>` | 创建新记忆卡片 |
 | `记忆状态` | 显示学习统计和进度 |
