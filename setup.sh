@@ -26,6 +26,7 @@ show_help() {
     echo "选项:"
     echo "  无参数      运行配置向导"
     echo "  --status    查看当前配置状态"
+    echo "  --check     静默检查配置状态（返回 0=已配置，1=未配置）"
     echo "  --reset     重置配置（保留数据）"
     echo "  --help      显示此帮助信息"
     echo ""
@@ -308,6 +309,13 @@ reset_config() {
 case "$1" in
     --status)
         show_status
+        ;;
+    --check)
+        if [ -f "$CONFIG_FILE" ]; then
+            exit 0  # 已配置
+        else
+            exit 1  # 未配置
+        fi
         ;;
     --reset)
         reset_config
