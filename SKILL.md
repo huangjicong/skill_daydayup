@@ -1,5 +1,5 @@
 ---
-name: spaced-repetition
+name: daydayup
 description: 智能间隔重复记忆系统。基于艾宾浩斯遗忘曲线，支持动态调整复习间隔。当用户说"帮我回忆"、"复习"、"添加记忆"、"记住"时触发。
 version: 1.0.0
 triggers:
