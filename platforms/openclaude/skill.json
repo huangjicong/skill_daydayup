@@ -1,0 +1,39 @@
+{
+  "name": "spaced-repetition",
+  "description": "智能间隔重复记忆系统。基于艾宾浩斯遗忘曲线，支持动态调整复习间隔。",
+  "version": "1.0.0",
+  "author": "huangjicong",
+  "repository": "https://github.com/huangjicong/skill_daydayup",
+  "triggers": [
+    "帮我回忆",
+    "复习",
+    "添加记忆",
+    "记住",
+    "记忆状态",
+    "今天学什么"
+  ],
+  "config": {
+    "vaultPath": {
+      "env": "DAYDAYUP_VAULT_PATH",
+      "description": "Obsidian vault 路径",
+      "required": true
+    },
+    "directories": {
+      "cards": "cards",
+      "reviews": "reviews",
+      "templates": "templates"
+    }
+  },
+  "intervals": {
+    "base": [1, 2, 4, 7, 15, 30, 60, 120],
+    "difficultyMultiplier": {
+      "easy": 1.5,
+      "medium": 1.0,
+      "hard": 0.5
+    }
+  },
+  "files": {
+    "skill": "../../skill.md",
+    "readme": "../../README.md"
+  }
+}

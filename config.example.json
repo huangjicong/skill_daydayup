@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "vaultPath": "${DAYDAYUP_VAULT_PATH}",
+  "directories": {
+    "cards": "cards",
+    "reviews": "reviews",
+    "templates": "templates"
+  },
+  "intervals": {
+    "base": [1, 2, 4, 7, 15, 30, 60, 120],
+    "difficultyMultiplier": {
+      "easy": 1.5,
+      "medium": 1.0,
+      "hard": 0.5
+    }
+  },
+  "feedbackKeywords": {
+    "easy": ["简单", "太简单了", "很容易", "秒了"],
+    "medium": ["一般", "还行", "记住了", "可以"],
+    "hard": ["困难", "有点难", "不太熟", "勉强"],
+    "forgot": ["没记住", "忘了", "完全忘了", "不知道"]
+  },
+  "aiMemoryAids": {
+    "enabled": true,
+    "types": ["association", "analogy", "mnemonic", "example", "visualization"]
+  },
+  "display": {
+    "cardsPerSession": 10,
+    "showStats": true
+  },
+  "security": {
+    "allowOutsideVault": false,
+    "allowedExtensions": [".md"],
+    "maxFileSizeKB": 100
+  }
+}
