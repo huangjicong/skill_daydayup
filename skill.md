@@ -25,7 +25,22 @@ export DAYDAYUP_VAULT_PATH="/path/to/your/obsidian/vault/daydayup"
 
 # 方法 2: 运行配置脚本
 ./setup.sh
+
+# 查看配置状态
+./setup.sh --status
 ```
+
+### 多平台安装说明
+
+**重要**: DayDayUp 采用数据与 Skill 分离的设计，多个 AI 工具共享同一 vault 数据。
+
+- **全局配置**: `~/.daydayup/config.json`（所有平台共享）
+- **数据目录**: Obsidian vault（iCloud 同步）
+
+首次安装后，在其他平台安装时：
+1. 克隆 skill 到该平台
+2. 运行 `./setup.sh --status` 检查配置
+3. 无需重新配置，自动使用现有数据和配置
 
 ## 触发词
 
