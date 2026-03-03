@@ -10,6 +10,8 @@ triggers:
   - "记住"
   - "记忆状态"
   - "今天学什么"
+  - "修改记忆路径"
+  - "设置记忆路径"
 ---
 
 # DayDayUp - Spaced Repetition Memory Skill
