@@ -86,6 +86,8 @@ cd ~/.claude/skills/daydayup
 ./setup.sh --status
 ```
 
+**提示**: 如果你跳过运行 setup.sh，在首次使用「记住」或「复习」时，AI 会自动引导你配置存储路径。
+
 ### 方法 2: 项目级安装
 
 ```bash
