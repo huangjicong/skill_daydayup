@@ -29,10 +29,19 @@ lastReview:
 >
 > **例子**: {{example}}
 
+> [!abstract] 第一性原理
+>
+> **本质问题**: {{fundamentalQuestion}}
+>
+> **核心假设**: {{coreAssumptions}}
+>
+> **底层逻辑**: {{underlyingLogic}}
+>
+> **边界条件**: {{boundaryConditions}}
+
 ---
 
 ## 复习历史
 
 | 日期 | 反馈 | 间隔 |
 |------|------|------|
-| - | - | - |
